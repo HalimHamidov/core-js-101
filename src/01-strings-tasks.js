@@ -18,7 +18,9 @@
  *   'aa',''    => 'aa'
  *   '',  'bb'  => 'bb'
  */
-function concatenateStrings(value1, value2) { return value1 + value2; }
+function concatenateStrings(value1, value2) {
+  return value1 + value2;
+}
 /**
  * Returns the length of given string.
  *
@@ -199,10 +201,10 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(width, height) {
-  const HEADER = `┌${('-'.repeat(width - 2))}┐\n`;
-  const BODY = height > 2 ? `|${(' '.repeat(width - 2))}|\n`.repeat(height - 2) : '';
-  const FOOTER = `└${('-'.repeat(width - 2))}┘\n`;
-  return HEADER + BODY + FOOTER;
+  const header = `┌${('-'.repeat(width - 2))}┐\n`;
+  const body = height > 2 ? `|${(' '.repeat(width - 2))}|\n`.repeat(height - 2) : '';
+  const footer = `└${('-'.repeat(width - 2))}┘\n`;
+  return header + body + footer;
 }
 
 
